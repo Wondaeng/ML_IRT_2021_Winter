@@ -22,7 +22,7 @@ def uncertainty_score(base_path, pool, cfg, mode='min_confidence'):
             else:
                 confidence_list.append((0, f))  # False Negative
 
-        elif mode == 'mean_confidence':
+        elif mode == 'mean_confidence':    # Criterion: The image with the least mean confident
             if num_instances > 0:
                 confidence_score = 0
                 for i in range(num_instances):
