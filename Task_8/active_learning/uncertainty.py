@@ -11,7 +11,7 @@ def uncertainty_score(base_path, pool, cfg, mode='min_confidence'):
         output = predictor(img)
         num_instances = len(output['instances'])
 
-        if mode == 'min_confidence':  # Criterion: The image containing the least confident instance
+        if mode == 'min_confidence':    # Criterion: The image containing the least confident instance
             if num_instances > 0:
                 confidence_score = 1  # 100% confident
                 for i in range(num_instances):
