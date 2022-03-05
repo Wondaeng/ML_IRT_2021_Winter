@@ -1,0 +1,46 @@
+# Parameters for Instance Segmentation with Active Learning
+# python xxx.py --config config.yaml
+
+# Paths
+train_dir: './datasets/train'
+val_dir: './datasets/val'
+test_dir: './datasets/test'
+
+train_json: './datasets/json/train.json'
+test_json: './datasets/json/test.json'
+
+output_dir: './output/'
+
+
+# Dataset parameters
+train_set_name: 'PS_train'
+test_set_name: 'PS_test'
+
+# Network parameters
+network_config: 'COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml'
+pretrained_weights: 'COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x.yaml'
+
+# Training-parameters
+devices: 'cuda'
+classes: ['parasite']
+
+base_learning_rate: 0.00025
+max_iteration: 500
+train_batch_size: 2
+num_workers: 2
+cfg_save_path: './Parasite_cfg.pickle'
+
+# Evaluation-parameters
+confidence_threshold: 0.5
+
+# Active-learning sampling
+initial_random_training: False
+initial_pool_size: 10
+mode: 'min_confidence'
+dropout_probability: 0.25
+mcd_iterations: 10
+strategies: 'uncertainty'
+pool_size: 30
+equal_pool_size: True
+loops: 9
+iou_thres: 0.5
