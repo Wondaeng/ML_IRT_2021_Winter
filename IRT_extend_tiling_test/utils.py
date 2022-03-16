@@ -80,13 +80,14 @@ def tiling_bbox(n, pth_json, dst):
             # COCO bounding box format is [top left x position, top left y position, width, height].
             bbox_w, bbox_h = annot["bbox"][2], annot["bbox"][3]
 
-            # where a & b mean: filename_0a_0b.ext
+            # where a & b mean: filename_0(a+1)_0(b+1).ext
             slice_num_a = x1 // w
             slice_num_b = y1 // h
             new_x1, new_y1 = x1 % w, y1 % h
 
             new_bbox = [new_x1, new_y1, bbox_w, bbox_h]
-
+            
+            # Add new annotation if only bbox does not present accross tiling boundaries
             if new_x1 + bbox_w > w or new_y1 + bbox_h > h:
                 pass
             else:
