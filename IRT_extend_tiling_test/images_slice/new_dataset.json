@@ -1,0 +1,110 @@
+{
+    "images": [
+        {
+            "height": 84,
+            "width": 150,
+            "id": 1,
+            "file_name": "car_plate_1_01_01.jpg"
+        },
+        {
+            "height": 84,
+            "width": 150,
+            "id": 2,
+            "file_name": "car_plate_1_01_02.jpg"
+        },
+        {
+            "height": 84,
+            "width": 150,
+            "id": 3,
+            "file_name": "car_plate_1_02_01.jpg"
+        },
+        {
+            "height": 84,
+            "width": 150,
+            "id": 4,
+            "file_name": "car_plate_1_02_02.jpg"
+        },
+        {
+            "height": 103,
+            "width": 219,
+            "id": 5,
+            "file_name": "car_plate_3_01_01.jpg"
+        },
+        {
+            "height": 103,
+            "width": 219,
+            "id": 6,
+            "file_name": "car_plate_3_01_02.jpg"
+        },
+        {
+            "height": 103,
+            "width": 219,
+            "id": 7,
+            "file_name": "car_plate_3_02_01.jpg"
+        },
+        {
+            "height": 103,
+            "width": 219,
+            "id": 8,
+            "file_name": "car_plate_3_02_02.jpg"
+        }
+    ],
+    "annotations": [
+        {
+            "iscrowd": 0,
+            "image_id": 1,
+            "bbox": [
+                41,
+                23,
+                46,
+                28
+            ],
+            "segmentation": [],
+            "category_id": 0,
+            "id": 1,
+            "area": 1288
+        },
+        {
+            "iscrowd": 0,
+            "image_id": 3,
+            "bbox": [
+                67,
+                39,
+                42,
+                24
+            ],
+            "segmentation": [],
+            "category_id": 0,
+            "id": 2,
+            "area": 1008
+        },
+        {
+            "iscrowd": 0,
+            "image_id": 5,
+            "bbox": [
+                69,
+                21,
+                31,
+                34
+            ],
+            "segmentation": [],
+            "category_id": 0,
+            "id": 4,
+            "area": 1054
+        },
+        {
+            "iscrowd": 0,
+            "image_id": 7,
+            "bbox": [
+                52,
+                11,
+                83,
+                41
+            ],
+            "segmentation": [],
+            "category_id": 0,
+            "id": 5,
+            "area": 3403
+        }
+    ]
+}
