@@ -4,7 +4,7 @@ import labelme2coco
 
 img_src = './test_image'
 slice_dst = './images_slice'
-slice_num = 4
+slice_num = 4    # Number of slice
 lst_names = utils.get_names(img_src)
 
 utils.tiling_img(slice_num, img_src, slice_dst, lst_names)
